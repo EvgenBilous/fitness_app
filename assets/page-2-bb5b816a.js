@@ -1,4 +1,4 @@
-import{g as h}from"./background-b6fd06d8.js";const l={list:document.querySelector(".fav-list"),text:document.querySelector(".fav-text")},p=localStorage.getItem("localStorageData"),f=JSON.parse(p);let v=[],m=[],y=!1;l.list.addEventListener("click",C);q();function q(){if(!p)return;const t=Object.keys(f);for(const a of t);const e=Object.values(f);for(const a of e)v.push(a),y=!0}y&&(l.list.innerHTML=w(v),I(),S());function w(t){return t.map(({name:e,bodyPart:a,target:o,time:s,burnedCalories:n,_id:c})=>`
+import{g as h}from"./background-c006b801.js";const l={list:document.querySelector(".fav-list"),text:document.querySelector(".fav-text")},p=localStorage.getItem("localStorageData"),f=JSON.parse(p);let v=[],m=[],y=!1;l.list.addEventListener("click",C);q();function q(){if(!p)return;const t=Object.keys(f);for(const a of t);const e=Object.values(f);for(const a of e)v.push(a),y=!0}y&&(l.list.innerHTML=w(v),I(),S());function w(t){return t.map(({name:e,bodyPart:a,target:o,time:s,burnedCalories:n,_id:c})=>`
     <li class="fav-item" data-name=${e} id=${c}>
             <div class="fav-box-link">
 
